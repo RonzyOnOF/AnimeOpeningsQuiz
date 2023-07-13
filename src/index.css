@@ -1,0 +1,11 @@
+html {
+  box-sizing: border-box;
+  background-color: #3E3030;
+}
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
