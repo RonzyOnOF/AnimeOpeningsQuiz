@@ -14,6 +14,7 @@
     width: 100%;
     height: 100vh;
     display: flex;
+    overflow: hidden;
 }
 
 .whiteSlash {
@@ -27,20 +28,16 @@
 }
 
 #yui {
-    /* width: 1150px; */
-    width: 62%;
+    width: 64%;
     z-index: 2;
     position: absolute;
-    right: 0;
+    right: -3%;
 }
 
 
 #yuiHidden {
     display: none;
-    width: 62%;
-    z-index: 2;
-    position: absolute;
-    right: 0;
+    right: -3%
 }
 
 .coverText {
@@ -73,23 +70,112 @@
 }
 
 
-
-
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1500px) {
     
     #yui {
-        width: 60%;
-        right: 0;
-        bottom: 2%;
+        width: 72%;
+        right: -14%;
+    }
+    
+    .coverText {
+        margin-left: 3.3rem;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 1075px) {
+    
+    #yui {
+        width: 80%;
+        right: -25%;
     }
 
 
     .whiteSlash {
         width: 200px;
-        right: 100px;
+        right: 280px;
     }
 
     .slash {
-        border-width: 0 0 400px 400px;
+        border-width: 0 0 580px 580px;
+    }
+
+    .coverText {
+        margin-left: 1.8rem;
+        font-size: 2rem;
+        width: 680px;
     }
 }
+
+
+
+@media screen and (max-width: 950px) {
+
+    .coverText {
+        width: 500px;
+        margin-left: 4.5rem;
+    }
+
+    #yui {
+        top: 100px;
+        right: -30%;
+    }
+}
+
+@media screen and (max-width: 740px) {
+
+    #yui {
+       width: 90%;
+       right: -35%;
+    }
+
+    .coverText {
+        width: 390px;
+        margin-left: 2.5rem;
+        font-size: 1.5rem;
+    }
+
+
+    .coverText button {
+        font-size: 1rem;
+        padding: 0.5rem 2rem;
+    }
+}
+
+
+
+@media screen and (max-width: 570px) {
+
+    .homeContainer {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    #yui {
+        width: 70%;
+        margin: auto;
+        position: static;
+        margin-top: -60px;
+    }
+
+    .whiteSlash {
+        display: none;
+    }
+
+    .slash {
+        display: none;
+    }
+
+    .coverText {
+        text-align: center;
+        width: 70%;
+        font-size: 1.1rem;
+        margin: auto;
+    }
+}
+
+
+

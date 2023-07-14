@@ -2,8 +2,7 @@ html {
   box-sizing: border-box;
   background-color: #3E3030;
   height: 100vh;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  overflow: hidden;
   font-family: 'Poppins';
 }
 *,
@@ -13,3 +12,5 @@ html {
   padding: 0;
   box-sizing: inherit;
 }
+
+
