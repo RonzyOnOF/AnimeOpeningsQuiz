@@ -1,0 +1,14 @@
+
+.redirectButton {
+    background-color: #ffdd53;
+    border: none;
+    padding: 0.6rem 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.9rem;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+}

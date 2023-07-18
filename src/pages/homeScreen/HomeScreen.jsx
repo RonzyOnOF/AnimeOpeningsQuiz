@@ -34,7 +34,6 @@ export const HomeScreen = () => {
                 <div className={styles.slash} ></div>
                 <div className={styles.whiteSlash}></div>
             </div>
-            <Outlet />
         </>
     )
 }

@@ -1,10 +1,12 @@
 import styles from './QuestionScreen.module.css';
 
+import { Countdown } from '../../components/countdown/Countdown';
+
 export const QuestionScreen = () => {
 
     return (
         <>
-            Question Screen
+            <Countdown startingNumber={3}/>
         </>
     )
 }

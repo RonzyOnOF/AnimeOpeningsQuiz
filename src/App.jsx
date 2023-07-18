@@ -1,5 +1,6 @@
 import { HomeScreen } from './pages/homeScreen/HomeScreen';
 import { QuestionScreen } from './pages/questionScreen/QuestionScreen';
+import { RootLayout } from './layout/RootLayout';
 
 
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
@@ -7,7 +8,8 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 export const App = () => {
 
   const router = createBrowserRouter(createRoutesFromElements(
-    <Route path='/' element={ <HomeScreen/> }>
+    <Route path='/' element={ <RootLayout/> }>
+      <Route index element={ <HomeScreen /> } />
       <Route path='play' element={ <QuestionScreen /> } />
     </Route>
   ))

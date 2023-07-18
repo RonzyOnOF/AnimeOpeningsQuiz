@@ -1,0 +1,21 @@
+.countdownContainer {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeButton {
+    background-color: red;
+}
+
+
+.countDownText {
+    color: white;
+    font-size: 10rem;
+}
+
+.beginText {
+    color: white;
+    font-size: 6rem;
+}
